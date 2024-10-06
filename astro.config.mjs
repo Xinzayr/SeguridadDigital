@@ -8,10 +8,10 @@ import tailwind from '@astrojs/tailwind';
 
 import partytown from '@astrojs/partytown';
 
-import db from '@astrojs/db';
+// import db from '@astrojs/db';
 
 // https://astro.build/config
 export default defineConfig({
     site: 'https://example.com',
-    integrations: [mdx(), sitemap(), tailwind(), partytown(), db()],
+    integrations: [mdx(), sitemap(), tailwind(), partytown()],
 });
